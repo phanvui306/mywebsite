@@ -1,0 +1,78 @@
+/* Điện thoại đứng */
+@media screen and (min-width:240px) {
+
+}
+/* Điện thoại ngang và Máy tính bảng dọc*/
+@media screen and (min-width:768px) {
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    .list-tour{
+        display: flex;
+    }
+    .feedback{
+        display: flex;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'item1 item1 item2 item3'
+        'item1 item1 item4 item5';
+        gap: 10px;
+    }
+    .column-3,.column-4{
+        flex: 25%;
+    }
+    .login article{
+        display: flex;
+    }
+    
+}
+/* Laptop  và máy tính bảng ngang*/
+@media screen and (min-width:1024px) {
+   main,header{
+    margin-left: 12%;
+    margin-right: 12%;
+   }
+   footer section{
+    margin-left: 12%;
+    margin-right: 12%;
+    display: flex;
+   }
+}
+.login{
+    height: 100vh;
+    background-image: -webkit-linear-gradient(top left, #a802e0 , #f7676a  ) ;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login h3{
+    color: white;
+}
+.login form{
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.login #inputPass, #inputUser{
+    width: 95%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+}
+.login button{
+    height: 30px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
